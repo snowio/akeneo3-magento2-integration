@@ -1,0 +1,24 @@
+{
+    "name": "snowio/akeneo3-magento2-integration",
+    "require": {
+        "snowio/magento2-data-model": "^0.6.0",
+        "joshdifabio/transform": "^0.1",
+        "snowio/akeneo3-data-model": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SnowIO\\Akeneo3Magento2\\": "src"
+        }
+    },
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/snowio/"}
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "SnowIO\\Akeneo3Magento2\\Test\\": "test/unit"
+        }
+    }
+}
