@@ -1,7 +1,5 @@
 # Akeneo 3 Magento Integration Package
 
-[![Build Status](https://travis-ci.com/snowio/akeneo3-magento2-integration.svg?branch=master)](https://travis-ci.com/snowio/akeneo3-magento2-integration)
-[![codecov](https://codecov.io/gh/snowio/akeneo3-magento2-integration/branch/master/graph/badge.svg)](https://codecov.io/gh/snowio/akeneo3-magento2-integration)
 
 ### Prerequisites
 
