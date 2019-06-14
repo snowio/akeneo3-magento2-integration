@@ -13,7 +13,7 @@ class CustomAttributeMapperTest extends TestCase
 {
     private $akeneoAttributes;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->akeneoAttributes = AttributeValueSet::fromJson('main', [
             'attribute_values' => [
