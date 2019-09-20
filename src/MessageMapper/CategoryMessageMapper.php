@@ -2,10 +2,10 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2\MessageMapper;
 
-use Joshdifabio\Transform\Filter;
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\MapElements;
-use Joshdifabio\Transform\Transform;
+use SnowIO\Transform\Filter;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\MapElements;
+use SnowIO\Transform\Transform;
 use SnowIO\Akeneo3DataModel\Event\CategoryDeletedEvent;
 use SnowIO\Akeneo3DataModel\Event\CategorySavedEvent;
 use SnowIO\Akeneo3DataModel\Event\EntityStateEvent;

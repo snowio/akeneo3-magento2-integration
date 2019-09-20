@@ -1,11 +1,11 @@
 <?php
 namespace SnowIO\Akeneo3Magento2;
 
-use function Joshdifabio\Transform\identity;
-use Joshdifabio\Transform\MapElements;
-use Joshdifabio\Transform\MapValues;
-use Joshdifabio\Transform\Transform;
-use Joshdifabio\Transform\WithKeys;
+use function SnowIO\Transform\identity;
+use SnowIO\Transform\MapElements;
+use SnowIO\Transform\MapValues;
+use SnowIO\Transform\Transform;
+use SnowIO\Transform\WithKeys;
 
 abstract class DataMapper
 {

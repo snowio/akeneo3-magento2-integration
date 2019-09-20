@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2;
 
-use Joshdifabio\Transform\Transform;
+use SnowIO\Transform\Transform;
 use SnowIO\Akeneo3DataModel\AttributeValueSet;
 use SnowIO\Akeneo3DataModel\ProductModelData;
 use SnowIO\Magento2DataModel\CustomAttributeSet;

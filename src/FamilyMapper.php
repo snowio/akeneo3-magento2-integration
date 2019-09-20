@@ -2,17 +2,17 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2;
 
-use Joshdifabio\Transform\CoGbkResult;
-use Joshdifabio\Transform\CoGroupByKey;
-use Joshdifabio\Transform\FlatMapElements;
-use Joshdifabio\Transform\GroupByKey;
-use Joshdifabio\Transform\Kv;
-use Joshdifabio\Transform\MapElements;
-use Joshdifabio\Transform\MapValues;
-use Joshdifabio\Transform\Pipeline;
-use Joshdifabio\Transform\Transform;
-use Joshdifabio\Transform\Values;
-use Joshdifabio\Transform\WithKeys;
+use SnowIO\Transform\CoGbkResult;
+use SnowIO\Transform\CoGroupByKey;
+use SnowIO\Transform\FlatMapElements;
+use SnowIO\Transform\GroupByKey;
+use SnowIO\Transform\Kv;
+use SnowIO\Transform\MapElements;
+use SnowIO\Transform\MapValues;
+use SnowIO\Transform\Pipeline;
+use SnowIO\Transform\Transform;
+use SnowIO\Transform\Values;
+use SnowIO\Transform\WithKeys;
 use SnowIO\Akeneo3DataModel\AttributeGroup as Akeneo3AttributeGroup;
 use SnowIO\Akeneo3DataModel\FamilyData;
 use SnowIO\Akeneo3DataModel\FamilyAttributeData;

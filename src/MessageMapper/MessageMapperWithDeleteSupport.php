@@ -2,11 +2,11 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2\MessageMapper;
 
-use Joshdifabio\Transform\Pipeline;
-use Joshdifabio\Transform\Diff;
-use Joshdifabio\Transform\Filter;
-use Joshdifabio\Transform\MapElements;
-use Joshdifabio\Transform\Transform;
+use SnowIO\Transform\Pipeline;
+use SnowIO\Transform\Diff;
+use SnowIO\Transform\Filter;
+use SnowIO\Transform\MapElements;
+use SnowIO\Transform\Transform;
 use SnowIO\Akeneo3DataModel\Event\EntityStateEvent;
 use SnowIO\Magento2DataModel\Command\Command;
 

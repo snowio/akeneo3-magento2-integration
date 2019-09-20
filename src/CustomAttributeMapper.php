@@ -2,11 +2,11 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2;
 
-use Joshdifabio\Transform\FlatMapElements;
-use Joshdifabio\Transform\FlatMapValues;
-use Joshdifabio\Transform\Identity;
-use Joshdifabio\Transform\Transform;
-use Joshdifabio\Transform\WithKeys;
+use SnowIO\Transform\FlatMapElements;
+use SnowIO\Transform\FlatMapValues;
+use SnowIO\Transform\Identity;
+use SnowIO\Transform\Transform;
+use SnowIO\Transform\WithKeys;
 use SnowIO\Akeneo3DataModel\AttributeValue;
 use SnowIO\Akeneo3DataModel\PriceCollection;
 use SnowIO\Magento2DataModel\CustomAttribute;

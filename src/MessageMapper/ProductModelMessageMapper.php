@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2\MessageMapper;
 
-use Joshdifabio\Transform\Transform;
+use SnowIO\Transform\Transform;
 use SnowIO\Akeneo3DataModel\Event\ProductDeletedEvent;
 use SnowIO\Akeneo3DataModel\Event\ProductSavedEvent;
 use SnowIO\Akeneo3DataModel\Event\EntityStateEvent;

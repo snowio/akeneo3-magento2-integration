@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace SnowIO\Akeneo3Magento2\Test\EventMapper;
 
-use Joshdifabio\Transform\Transform;
+use SnowIO\Transform\Transform;
 use PHPUnit\Framework\TestCase;
 use SnowIO\Akeneo3Magento2\FamilyMapper;
 use SnowIO\Akeneo3Magento2\MessageMapper\FamilyMessageMapper;
