@@ -14,11 +14,17 @@ final class AttributeOptionMapper extends DataMapper
 
     public function __invoke(Akeneo3AttributeOption $attributeOption): Magento2AttributeOption
     {
-        return Magento2AttributeOption::of(
+        $magentoAttributeOption = Magento2AttributeOption::of(
             $attributeOption->getAttributeCode(),
             $this->obtainOptionCodeFromPrefixedOptionCode($attributeOption),
             $attributeOption->getLabel($this->defaultLocale) ?? $attributeOption->getOptionCode()
         );
+
+        if ($attributeOption->getSortOrder()) {
+            return $magentoAttributeOption->withSortOrder((int) $attributeOption->getSortOrder());
+        }
+
+        return $magentoAttributeOption;
     }
 
     private function obtainOptionCodeFromPrefixedOptionCode(Akeneo3AttributeOption $attributeOption)
