@@ -37,7 +37,7 @@ final class LocalisedAttributeOptionMapper extends DataMapper
         $storeCode = $this->localeStoreMap[$label->getLocale()] ?? null;
 
         if (!$storeCode) {
-            throw new \InvalidArgumentException("Unknown Store Code '$storeCode'");
+            throw new \InvalidArgumentException("Unknown Store Code for locale '{$label->getLocale()}'");
         }
 
         return AttributeOptionStoreLabel::of($storeCode, $label->getValue());
