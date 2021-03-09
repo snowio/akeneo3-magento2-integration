@@ -3,7 +3,7 @@
     "require": {
         "snowio/magento2-data-model": "^1.0",
         "snowio/transform": "^1.0",
-        "snowio/akeneo3-data-model": "^0.2"
+        "snowio/akeneo3-data-model": ">=0.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.3"
