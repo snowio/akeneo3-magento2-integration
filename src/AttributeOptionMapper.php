@@ -30,7 +30,7 @@ final class AttributeOptionMapper extends DataMapper
     private function obtainOptionCodeFromPrefixedOptionCode(Akeneo3AttributeOption $attributeOption)
     {
         $optionCodes = explode('-', $attributeOption->getOptionCode());
-        return count($optionCodes) >= 2 && $optionCodes[0] === $attributeOption->getAttributeCode() ?
+        return count($optionCodes) >= 2 && strtolower($optionCodes[0]) === strtolower($attributeOption->getAttributeCode()) ?
             implode('-', array_slice($optionCodes, 1)) :
             $attributeOption->getOptionCode();
     }
