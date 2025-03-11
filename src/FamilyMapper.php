@@ -58,7 +58,7 @@ final class FamilyMapper extends DataMapper
             Kv::of('attributes', $attributesPerGroup),
         ]);
 
-        $attributeSetName = $familyData->getLabel($this->defaultLocale);
+        $attributeSetName = $familyData->getLabel($this->defaultLocale) ?? $familyData->getCode();
         if ($attributeSetName === 'Default') {
             $attributeSetName = 'PIM Default';
         }

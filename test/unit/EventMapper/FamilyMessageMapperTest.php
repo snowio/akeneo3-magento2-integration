@@ -47,6 +47,15 @@ class FamilyMessageMapperTest extends TestCase
                 'new' => ['@timestamp' => 1234] + $this->getFamilyJson()
             ],
         ];
+
+        yield [
+            FamilyMapper::withDefaultLocale('en_GB')->getTransform(),
+            [
+                'old' => null,
+                'new' => ['@timestamp' => 1234] + $this->getFamilyJson(null)
+            ],
+            SaveAttributeSetCommand::of($this->getAttributeSetData())->withTimestamp(1234),
+        ];
     }
 
     private function getFamilyJson(): array
@@ -115,9 +124,9 @@ class FamilyMessageMapperTest extends TestCase
         ];
     }
 
-    private function getAttributeSetData(): AttributeSetData
+    private function getAttributeSetData(?string $name = 'Trousers'): AttributeSetData
     {
-        return AttributeSetData::of(EntityTypeCode::PRODUCT, 'trousers', 'Trousers')
+        return AttributeSetData::of(EntityTypeCode::PRODUCT, 'trousers', $name)
             ->withAttributeGroup(
                 AttributeGroupData::of('default', 'Default (Akeneo)')
                     ->withSortOrder(0)
