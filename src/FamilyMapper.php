@@ -58,11 +58,9 @@ final class FamilyMapper extends DataMapper
             Kv::of('attributes', $attributesPerGroup),
         ]);
 
-        $attributeSetName = $familyData->getLabel($this->defaultLocale);
+        $attributeSetName = $familyData->getLabel($this->defaultLocale) ?? $familyData->getCode();
         if ($attributeSetName === 'Default') {
             $attributeSetName = 'PIM Default';
-        } elseif (null === $attributeSetName) {
-            $attributeSetName = $familyData->getCode();
         }
         return AttributeSetData::of(EntityTypeCode::PRODUCT, $familyData->getCode(), $attributeSetName)
             ->withAttributeGroups(AttributeGroupDataSet::of(\iterator_to_array($magentoAttributeGroups)));
